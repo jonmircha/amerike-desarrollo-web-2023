@@ -7,5 +7,8 @@ En este repositorio encontrarán todos los contenidos que usaremos a lo largo de
 - [Guía Terminal de Comandos](https://jonmircha.com/terminal).
 - [Guía _MarkDown_](https://jonmircha.com/markdown).
 - [Guía _Git & GitHub_](https://jonmircha.com/git).
+- [Guía _Visual Studio Code_](https://jonmircha.com/vscode).
+- [Guía _Emmet_](https://jonmircha.com/emmet).
+- [Guía _HTML_](https://jonmircha.com/html).
 
 ![Java?... This is JavaScript](https://jonmircha.com/img/blog/this-is-javascript.jpg)
