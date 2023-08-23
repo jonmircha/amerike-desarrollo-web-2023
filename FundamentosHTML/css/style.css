@@ -4,3 +4,7 @@
   color: white;
 } */
 /* comentario */
+
+html {
+  scroll-behavior: smooth;
+}
