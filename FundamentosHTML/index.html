@@ -10,181 +10,270 @@
     />
     <!-- comentario shift + alt+ a -->
     <link rel="icon" href="img/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
+    <style>
+      h1 {
+        background-color: bisque;
+      }
+    </style>
   </head>
   <body>
-    <h1 id="inicio">Fundamentos de HTML</h1>
-    <!-- ul>li*5>a -->
-    <ul>
-      <li><a href="#encabezados">Encabezados</a></li>
-      <li><a href="#etiquetas-texto">Etiquetas de Texto</a></li>
-      <li><a href="#listas">Listas</a></li>
-      <li><a href="#tablas">Tablas</a></li>
-      <li><a href="#enlaces">Enlaces</a></li>
-      <li><a href="#imagenes">Imágenes</a></li>
-      <li><a href="#audio-video">Audio y Video</a></li>
-      <li><a href="#iframe">Iframe</a></li>
-    </ul>
-    <hr />
-    <h2 id="encabezados">Encabezados</h2>
-    <h1>Encabezado 1</h1>
-    <h2>Encabezado 2</h2>
-    <h3>Encabezado 3</h3>
-    <h4>Encabezado 4</h4>
-    <h5>Encabezado 5</h5>
-    <h6>Encabezado 6</h6>
-    <a href="#inicio">Regresar ☝🏻</a>
-    <hr />
-    <h2 id="etiquetas-texto">Etiquetas para texto</h2>
-    <p>
-      <b>Lorem ipsum dolor</b> sit amet consectetur adipisicing elit. Suscipit
-      impedit, cumque nostrum ullam facere nesciunt dolorum repudiandae
-      perspiciatis qui libero, aspernatur sed ipsum obcaecati dolore veniam
-      velit soluta doloribus! Omnis!
-    </p>
-    <p>
-      <b>Texto en negritas</b>
-      <br />
-      <i>Texto en cursiva</i>
-      <br />
-      <u>Texto Subrayado</u>
-      <br />
-      <s>Texto Tachado</s>
-      <br />
-      H<sub>2</sub>O
-      <br />
-      e = mc<sup>2</sup>
-      <br />
-      <small>Letras pequeñas</small>
-      <br />
-      <b><i>Texto en negrita y cursiva</i></b>
-      <br />
-      <mark>Texto remarcado</mark>
-    </p>
-    <a href="#inicio">Regresar ☝🏻</a>
-    <hr />
-    <h2 id="listas">Listas</h2>
-    <h3>Lista Ordenada</h3>
-    <ol>
-      <li>Primavera</li>
-      <li>Verano</li>
-      <li>Otoño</li>
-      <li>Invierno</li>
-    </ol>
-    <ol reversed>
-      <li>Primavera</li>
-      <li>Verano</li>
-      <li>Otoño</li>
-      <li>Invierno</li>
-    </ol>
-    <ol type="A">
-      <li>Primavera</li>
-      <li>Verano</li>
-      <li>Otoño</li>
-      <li>Invierno</li>
-    </ol>
-    <ol start="1001">
-      <li>Primavera</li>
-      <li>Verano</li>
-      <li>Otoño</li>
-      <li>Invierno</li>
-    </ol>
-    <h3>Lista Desordenada</h3>
-    <ul>
-      <li>Primavera</li>
-      <li>Verano</li>
-      <li>Otoño</li>
-      <li>Invierno</li>
-    </ul>
-    <ul type="circle">
-      <li>Verano</li>
-      <li>Otoño</li>
-      <li>Invierno</li>
-    </ul>
-    <ul type="square">
-      <li>Primavera</li>
-      <li>Verano</li>
-      <li>Otoño</li>
-      <li>Invierno</li>
-    </ul>
-    <a href="#inicio">Regresar ☝🏻</a>
-    <hr />
-    <h2 id="tablas">Tablas</h2>
-    <table border="1">
-      <tr>
-        <th>País</th>
-        <th>Ciudad</th>
-        <th>Continente</th>
-        <th>Comida</th>
-      </tr>
-      <tr>
-        <td>México</td>
-        <td>CDMX</td>
-        <td>Ámerica</td>
-        <td>Chilaquiles</td>
-      </tr>
-      <tr>
-        <td>Japón</td>
-        <td>Tokio</td>
-        <td>Asia</td>
-        <td>Sushi</td>
-      </tr>
-      <tr>
-        <td>Italia</td>
-        <td>Roma</td>
-        <td>Europa</td>
-        <td>Pizza</td>
-      </tr>
-    </table>
-    <a href="#inicio">Regresar ☝🏻</a>
-    <hr />
-    <h2 id="enlaces">Enlaces</h2>
-    <a href="otra-pagina.html">Otra Página</a>
-    <a href="https://amerike.edu.mx" target="_blank">Amerike</a>
-    <a href="#inicio">Regresar al inicio☝🏻</a>
-    <hr />
-    <h2 id="imagenes">Imágenes</h2>
-    <img src="img/favicon.png" alt="kenai" />
-    <img
-      src="https://jonmircha.com/img/blog/this-is-fine.gif"
-      alt="This is Fine"
-    />
-    <a href="#inicio">Regresar al inicio☝🏻</a>
-    <hr />
-    <h2 id="audio-video">Audio y Video</h2>
-    <audio
-      src="https://jonmircha.com/img/media/feels-patrick-patrikios.mp3"
-      controls
-      muted
-      autoplay
-      preload
-    ></audio>
-    <video
-      src="https://jonmircha.com/img/media/kenai.mp4"
-      controls
-      poster="img/puesta-de-sol.jpg"
-    ></video>
-    <a href="#inicio">Regresar al inicio☝🏻</a>
-    <hr />
-    <h2 id="iframe">Iframe</h2>
-    <iframe
-      width="560"
-      height="315"
-      src="https://www.youtube.com/embed/-oK6zL01fNM?si=2H7Fzp_7ExXZLwBf"
-      title="YouTube video player"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen
-    ></iframe>
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.831347043534!2d-99.15897832400478!3d19.376453981891057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff82b342aee3%3A0x93244993291fd0cc!2sUniversidad%20Amerike%20Campus%20CDMX!5e0!3m2!1ses-419!2smx!4v1692827082603!5m2!1ses-419!2smx"
-      width="600"
-      height="450"
-      style="border: 0"
-      allowfullscreen=""
-      loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade"
-    ></iframe>
-    <a href="#inicio">Regresar al inicio☝🏻</a>
+    <header>
+      <h1 id="inicio" style="font-size: 32px; color: orangered">
+        Fundamentos de HTML
+      </h1>
+      <!-- ul>li*5>a -->
+      <nav id="menu">
+        <ul>
+          <li><a href="#encabezados">Encabezados</a></li>
+          <li><a href="#etiquetas-texto">Etiquetas de Texto</a></li>
+          <li><a href="#listas">Listas</a></li>
+          <li><a href="#tablas">Tablas</a></li>
+          <li><a href="#enlaces">Enlaces</a></li>
+          <li><a href="#imagenes">Imágenes</a></li>
+          <li><a href="#audio-video">Audio y Video</a></li>
+          <li><a href="#iframe">Iframe</a></li>
+          <li><a href="#detalles">Detalles</a></li>
+          <li><a href="#css">CSS</a></li>
+        </ul>
+      </nav>
+      <hr />
+    </header>
+    <section>
+      <h2 id="encabezados">Encabezados</h2>
+      <h1>Encabezado 1</h1>
+      <h2>Encabezado 2</h2>
+      <h3>Encabezado 3</h3>
+      <h4>Encabezado 4</h4>
+      <h5>Encabezado 5</h5>
+      <h6>Encabezado 6</h6>
+      <a href="#inicio">Regresar ☝🏻</a>
+      <hr />
+    </section>
+    <section>
+      <h2 id="etiquetas-texto">Etiquetas para texto</h2>
+      <p>
+        <b>Lorem ipsum dolor</b> sit amet consectetur adipisicing elit. Suscipit
+        impedit, cumque nostrum ullam facere nesciunt dolorum repudiandae
+        perspiciatis qui libero, aspernatur sed ipsum obcaecati dolore veniam
+        velit soluta doloribus! Omnis!
+      </p>
+      <p>
+        <b>Texto en negritas</b>
+        <br />
+        <i>Texto en cursiva</i>
+        <br />
+        <u>Texto Subrayado</u>
+        <br />
+        <s>Texto Tachado</s>
+        <br />
+        H<sub>2</sub>O
+        <br />
+        e = mc<sup>2</sup>
+        <br />
+        <small>Letras pequeñas</small>
+        <br />
+        <b><i>Texto en negrita y cursiva</i></b>
+        <br />
+        <mark>Texto remarcado</mark>
+      </p>
+      <a href="#inicio">Regresar ☝🏻</a>
+      <hr />
+    </section>
+    <section>
+      <h2 id="listas">Listas</h2>
+      <h3>Lista Ordenada</h3>
+      <ol>
+        <li>Primavera</li>
+        <li>Verano</li>
+        <li>Otoño</li>
+        <li>Invierno</li>
+      </ol>
+      <ol reversed>
+        <li>Primavera</li>
+        <li>Verano</li>
+        <li>Otoño</li>
+        <li>Invierno</li>
+      </ol>
+      <ol type="A">
+        <li>Primavera</li>
+        <li>Verano</li>
+        <li>Otoño</li>
+        <li>Invierno</li>
+      </ol>
+      <ol start="1001">
+        <li>Primavera</li>
+        <li>Verano</li>
+        <li>Otoño</li>
+        <li>Invierno</li>
+      </ol>
+      <h3>Lista Desordenada</h3>
+      <ul>
+        <li>Primavera</li>
+        <li>Verano</li>
+        <li>Otoño</li>
+        <li>Invierno</li>
+      </ul>
+      <ul type="circle">
+        <li>Verano</li>
+        <li>Otoño</li>
+        <li>Invierno</li>
+      </ul>
+      <ul type="square">
+        <li>Primavera</li>
+        <li>Verano</li>
+        <li>Otoño</li>
+        <li>Invierno</li>
+      </ul>
+      <a href="#inicio">Regresar ☝🏻</a>
+      <hr />
+    </section>
+    <section>
+      <h2 id="tablas">Tablas</h2>
+      <table border="1">
+        <tr>
+          <th>País</th>
+          <th>Ciudad</th>
+          <th>Continente</th>
+          <th>Comida</th>
+        </tr>
+        <tr>
+          <td>México</td>
+          <td>CDMX</td>
+          <td>Ámerica</td>
+          <td>Chilaquiles</td>
+        </tr>
+        <tr>
+          <td>Japón</td>
+          <td>Tokio</td>
+          <td>Asia</td>
+          <td>Sushi</td>
+        </tr>
+        <tr>
+          <td>Italia</td>
+          <td>Roma</td>
+          <td>Europa</td>
+          <td>Pizza</td>
+        </tr>
+      </table>
+      <a href="#inicio">Regresar ☝🏻</a>
+      <hr />
+    </section>
+    <section>
+      <h2 id="enlaces">Enlaces</h2>
+      <a href="otra-pagina.html">Otra Página</a>
+      <a href="https://amerike.edu.mx" target="_blank">Amerike</a>
+      <a href="#inicio">Regresar al inicio☝🏻</a>
+      <hr />
+    </section>
+    <section>
+      <h2 id="imagenes">Imágenes</h2>
+      <img src="img/favicon.png" alt="kenai" />
+      <img
+        class="this-is-fine"
+        src="https://jonmircha.com/img/blog/this-is-fine.gif"
+        alt="This is Fine"
+      />
+      <a href="#inicio">Regresar al inicio☝🏻</a>
+      <hr />
+    </section>
+    <section>
+      <h2 id="audio-video">Audio y Video</h2>
+      <audio
+        src="https://jonmircha.com/img/media/feels-patrick-patrikios.mp3"
+        controls
+        muted
+        autoplay
+        preload
+      ></audio>
+      <video
+        src="https://jonmircha.com/img/media/kenai.mp4"
+        controls
+        poster="img/puesta-de-sol.jpg"
+      ></video>
+      <a href="#inicio">Regresar al inicio☝🏻</a>
+      <hr />
+    </section>
+    <section>
+      <h2 id="iframe">Iframe</h2>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/-oK6zL01fNM?si=2H7Fzp_7ExXZLwBf"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.831347043534!2d-99.15897832400478!3d19.376453981891057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff82b342aee3%3A0x93244993291fd0cc!2sUniversidad%20Amerike%20Campus%20CDMX!5e0!3m2!1ses-419!2smx!4v1692827082603!5m2!1ses-419!2smx"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+      <a href="#inicio">Regresar al inicio☝🏻</a>
+      <hr />
+    </section>
+    <section>
+      <h2 id="detalles">Detalles</h2>
+      <details>
+        <summary>Primer semestre</summary>
+        <div>
+          <ul>
+            <li>Matemáticas</li>
+            <li>Algebra</li>
+            <li>Programación</li>
+            <li>Introducción a la Ciberseguridad</li>
+            <li>Sistemas operativos</li>
+          </ul>
+        </div>
+      </details>
+      <a href="#inicio">Regresar al inicio☝🏻</a>
+      <hr />
+    </section>
+    <section>
+      <h2 id="css">CSS</h2>
+      <p class="text-left fs-24 text-red">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+        cupiditate saepe esse eveniet, dolor eligendi quaerat ullam perferendis
+        veritatis dolore. Nesciunt voluptatum, corporis minus distinctio nam
+        animi ut placeat dolorem.
+      </p>
+      <p class="text-center fs-20 text-green">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque ut modi
+        voluptatem, eveniet iste officia qui quam aliquam voluptas corrupti
+        distinctio laborum, dolorem libero pariatur temporibus esse commodi
+        explicabo aperiam.
+      </p>
+      <p class="text-right fs-12 text-blue">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima, dolor.
+        Maxime, voluptas ab quia numquam voluptatem, dolores recusandae unde
+        consequuntur, similique hic ex illum dolore vel alias labore fugit
+        temporibus.
+      </p>
+      <button class="btn">Botón 1</button>
+      <button class="btn">Botón 2</button>
+      <button class="btn">Botón 3</button>
+      <p class="btn">Botón 4</p>
+      <a href="#inicio">Regresar al inicio☝🏻</a>
+      <hr />
+    </section>
+    <footer>
+      <p>
+        <small>
+          Sitio hecho por
+          <a href="https://jonmircha.com" target="_blank">@jonmircha</a>
+        </small>
+      </p>
+    </footer>
   </body>
 </html>

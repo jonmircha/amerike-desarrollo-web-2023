@@ -5,6 +5,101 @@
 } */
 /* comentario */
 
+/* 
+3 tipos de selectores básicos:
+  1) Etiquetas
+  2) Identificadores
+  3) Clases
+  4) Pseudo clases (Estados especiales)
+*/
+
+:root {
+  --color-primary: #0c8a86;
+  --color-dark: #222;
+  --font-body: 16px;
+}
+
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-dark);
+  color: var(--color-primary);
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  color: orangered;
+  background-color: black;
+  transition: all 0.3s ease-out;
+}
+
+a:hover {
+  color: aqua;
+  background-color: blueviolet;
+}
+
+img {
+  max-width: 100%;
+}
+
+#menu {
+  background-color: aquamarine;
+  color: blueviolet;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.fs-24 {
+  font-size: 24px;
+}
+
+.fs-20 {
+  font-size: 20px;
+}
+
+.fs-12 {
+  font-size: 12px;
+}
+
+.text-red {
+  color: red;
+}
+
+.text-green {
+  color: green;
+}
+
+.text-blue {
+  color: blue;
+}
+
+.btn {
+  background-color: black;
+  color: greenyellow;
+  border: thin solid green;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 16px;
+}
+
+.this-is-fine {
+  transition: all 1s ease-in-out;
+}
+
+.this-is-fine:hover {
+  border-radius: 50%;
+  transform: scale(2, 2) rotate(360deg) translate(20%, -50%);
+  filter: grayscale(1) blur(0.5rem);
 }
