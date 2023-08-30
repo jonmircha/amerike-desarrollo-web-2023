@@ -21,6 +21,11 @@
 
 html {
   scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
@@ -102,4 +107,39 @@ img {
   border-radius: 50%;
   transform: scale(2, 2) rotate(360deg) translate(20%, -50%);
   filter: grayscale(1) blur(0.5rem);
+}
+
+body {
+  margin: 0;
+}
+
+.caja {
+  background-color: yellow;
+  border: 4px solid red;
+  padding: 16px;
+  margin: 16px;
+}
+
+.caja-1 {
+  width: 300px;
+  height: 300px;
+  box-sizing: content-box;
+}
+
+.caja-2,
+.caja-3 {
+  width: 300px;
+  height: 300px;
+  box-sizing: border-box;
+}
+
+.caja-4 {
+  width: 50vw;
+  height: 50vh;
+  padding: 2rem;
+  border: 0.25rem double magenta;
+}
+
+.d-none {
+  display: none;
 }
