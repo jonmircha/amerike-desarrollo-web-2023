@@ -124,9 +124,98 @@ let datosPersonales = {
     movil: "5512345678",
     instagram: "jonmircha",
   },
+  obtenerNombre: function () {
+    console.log(this.nombre);
+  },
+  obtenerEdad: function () {
+    return this.edad;
+  },
 };
 
 console.log(datosPersonales);
 console.log(datosPersonales.nombre);
 console.log(datosPersonales.contacto.email);
 console.log(datosPersonales.lenguajes[2]);
+datosPersonales.obtenerNombre();
+console.log(datosPersonales.obtenerEdad());
+
+/* 
+
+Funciones
+
+Son un conjunto de instrucciones (líneas de código) que van a ejecutar ciertas acciones.
+Pueden recibir o no parámetros. Los parámetros son los datos que puede necesitar la función para internamente ejecutar sus sentencias.
+Las funciones pueden o no retornar un valor, eso dependerá del propósito de la función.
+*/
+
+//Definición
+function saludar() {
+  console.log("Hola Mundo");
+  console.log("Bienvenidos a la Programación Web");
+  console.log("JavaScript es el lenguaje de la web");
+}
+
+//ejecutar o invocar
+saludar();
+saludar();
+saludar();
+
+function sumar(a, b) {
+  let c = a + b;
+  return c;
+}
+
+sumar(2, 4);
+console.log(sumar(8, 9));
+
+let suma = sumar(7, 90);
+console.log(suma);
+
+function saludarA(nombre = "Desconocid@") {
+  console.log(`Hola ${nombre}, ¿cómo estás?`);
+}
+
+saludarA("Ana");
+saludarA();
+
+/* POO basada en Clases  */
+class Persona {
+  //el constructor es un método especial que se ejecuta en el momento de instanciar la clase
+  constructor(nombre, apellido) {
+    this.nombre = nombre;
+    this.apellido = apellido;
+  }
+
+  obtenerNombreCompleto() {
+    return `${this.nombre} ${this.apellido}`;
+  }
+}
+
+console.log("***POO con Clases***");
+let personaA = new Persona("Irma", "Campos");
+console.log(personaA);
+console.log(personaA.obtenerNombreCompleto());
+
+let personaB = new Persona("Ricardo", "Osorno");
+console.log(personaB);
+console.log(personaB.obtenerNombreCompleto());
+
+class Profesor extends Persona {
+  constructor(nombre, apellido, materia) {
+    super(nombre, apellido);
+    this.materia = materia;
+  }
+
+  obtenerMateria() {
+    return this.materia;
+  }
+
+  obtenerNombreCompleto() {
+    return `Profr. ${this.nombre} ${this.apellido}`;
+  }
+}
+
+let profesorA = new Profesor("Jon", "MirCha", "Desarrollo Web");
+console.log(profesorA);
+console.log(profesorA.obtenerNombreCompleto());
+console.log(profesorA.obtenerMateria());
