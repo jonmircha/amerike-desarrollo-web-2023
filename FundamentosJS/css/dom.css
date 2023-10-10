@@ -1,0 +1,65 @@
+/* 
+4 tipos de selectores básicos en CSS
+  1) etiqueta -> <p>
+  2) identificador -> #titulo
+  3) clases -> .text-center
+  4) atributo -> [atributo="valor"]
+*/
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+p {
+  color: blue;
+}
+
+input[type="text"] {
+  background-color: black;
+  color: white;
+}
+
+#logo {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.bg-palegreen {
+  background-color: palegreen;
+}
+
+.bg-skyblue {
+  background-color: skyblue;
+}
+
+.fs-8 {
+  font-size: 8px;
+}
+
+.fs-12 {
+  font-size: 12px;
+}
+
+.fs-16 {
+  font-size: 16px;
+}
+
+.fs-20 {
+  font-size: 20px;
+}
