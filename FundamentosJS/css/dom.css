@@ -63,3 +63,27 @@ input[type="text"] {
 .fs-20 {
   font-size: 20px;
 }
+
+.online,
+.offline {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  background-color: #1b5e20;
+  color: #fff;
+}
+
+.offline {
+  background-color: #b71c1c;
+}
+
+.dark-mode {
+  background-color: #222;
+  color: #eee;
+}

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Introducción al DOM</title>
     <link rel="stylesheet" href="css/dom.css" />
+    <link id="theme" rel="stylesheet" href="css/light.css" />
   </head>
   <body>
     <header id="header-main">
@@ -45,6 +46,59 @@
       <form action="">
         <input type="text" name="Nombre" placeholder="Nombre..." />
         <input type="text" name="Correo" placeholder="Correo..." />
+      </form>
+      <h2>Eventos</h2>
+      <button id="btn-push" onclick="saludar();">Presióname</button>
+      <button id="btn-push-2">Presióname 2</button>
+      <button id="btn-theme">🌙</button>
+      <div>
+        <h3>El párrafo de abajo tiene evento</h3>
+        <p id="p-push-3">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur,
+          esse. Neque accusamus deserunt nesciunt velit recusandae atque,
+          voluptatem non aperiam ad labore ut qui, saepe eveniet explicabo cum
+          officia sed?
+        </p>
+      </div>
+      <p>Elige un tema para el documento:</p>
+      <form>
+        <input
+          name="theme"
+          id="radio-light"
+          type="radio"
+          data-theme="css/light.css"
+          data-name="Claro"
+          checked
+        />
+        <label for="radio-light">Tema claro</label>
+        <br />
+        <input
+          name="theme"
+          id="radio-dark"
+          type="radio"
+          data-theme="css/dark.css"
+          data-name="Obscuro"
+        />
+        <label for="radio-dark">Tema obscuro</label>
+        <br />
+        <input
+          name="theme"
+          id="radio-sky"
+          type="radio"
+          data-theme="css/sky.css"
+          data-name="Cielo"
+        />
+        <label for="radio-sky">Tema cielo</label>
+        <br />
+        <input
+          name="theme"
+          id="radio-sun"
+          type="radio"
+          data-theme="css/sun.css"
+          data-name="Soleado"
+        />
+        <label for="radio-sun">Tema soleado</label>
+        <br />
       </form>
     </main>
     <footer>
