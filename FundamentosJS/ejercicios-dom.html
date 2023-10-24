@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es" data-dark>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicios del DOM</title>
+    <style>
+      .dark-theme-btn {
+        position: fixed;
+        z-index: 999;
+        bottom: 1vh;
+        left: 1vw;
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        font-size: 2rem;
+        font-weight: bold;
+        background-color: #601e9c;
+        color: #f7df1e;
+        cursor: pointer;
+        outline: 0;
+        border: 0;
+        transition: all 0.3s ease-out;
+      }
+
+      .dark-mode {
+        background-color: #222;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Ejercicios del DOM</h1>
+    <section>
+      <h2>Reloj Digital</h2>
+      <div id="clock"></div>
+      <button id="play-clock">Iniciar Reloj</button>
+      <button id="stop-clock">Detener Reloj</button>
+    </section>
+    <section>
+      <h2>Tema Oscuro / Claro</h2>
+      <button class="dark-theme-btn">🌙</button>
+    </section>
+    <script type="module">
+      import { clock } from "./js/modulos/clock.js";
+      import { darkTheme } from "./js/modulos/dark-theme.js";
+
+      clock("#clock", "#play-clock", "#stop-clock");
+      darkTheme(".dark-theme-btn", "dark-mode");
+    </script>
+  </body>
+</html>
