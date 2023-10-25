@@ -1,4 +1,4 @@
-export function sendContactForm() {
+export function sendContactForm(email) {
   let $form = document.querySelector("#contact-form"),
     $inputs = document.querySelectorAll("#contact-form [required]");
 
@@ -42,7 +42,7 @@ export function sendContactForm() {
       : $smallError.classList.add("d-none");
   });
 
-  $form.addEventListener("submit", (e) => {
+  $form.addEventListener("submit", async (e) => {
     e.preventDefault();
     alert("Enviando Formulario");
     //console.log(e);
@@ -52,10 +52,43 @@ export function sendContactForm() {
       $message = document.querySelector("#form-message");
 
     $loader.classList.remove("d-none");
-    setTimeout(() => {
+
+    try {
+      let url = `http://formsubmit.co/ajax/${email}`;
+      let options = {
+        method: "POST",
+        body: new FormData(e.target),
+      };
+
+      let res = await fetch(url, options);
+
+      if (!res.ok) {
+        throw "Hubo un error al enviar la información, intenta nuevamente";
+      }
+
+      let json = await res.json();
+      console.log(json);
+
+      e.target.reset();
       $loader.classList.add("d-none");
       $message.classList.remove("d-none");
-      setTimeout(() => $message.classList.add("d-none"), 3000);
-    }, 3000);
+      $message.innerHTML = `${
+        json.success
+          ? "El formulario se envío con éxito"
+          : "Hubo un error al enviar la información, intenta nuevamente"
+      }`;
+      setTimeout(() => {
+        $message.classList.add("d-none");
+        $message.innerHTML = "";
+      }, 3000);
+    } catch (err) {
+      console.error(err);
+      $message.classList.remove("d-none");
+      $message.innerHTML = `<p><b>${err}</b></p>`;
+      setTimeout(() => {
+        $message.classList.add("d-none");
+        $message.innerHTML = "";
+      }, 3000);
+    }
   });
 }

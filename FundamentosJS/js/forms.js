@@ -1,3 +1,3 @@
 import { sendContactForm } from "./modulos/contact-form.js";
 
-sendContactForm();
+sendContactForm("jonmircha@gmail.com");

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practicando con JSON, AJAX y APIs</title>
+    <link rel="stylesheet" href="css/practicas-apis.css" />
+  </head>
+  <body>
+    <h1 class="sticky-title">
+      Practicando con <i>APIs</i>, <i>JSON</i> y <i>AJAX</i>
+    </h1>
+    <section class="full-screen">
+      <h2>Interactuando con el <i>API</i> de <i>GitHub</i></h2>
+      <select id="usuarios-github">
+        <option value="">- - -</option>
+        <option value="jonmircha">Jonathan</option>
+        <option value="lauraolmos">Laura</option>
+        <option value="nachorp">Nacho</option>
+        <option value="jonamerike">Jon Amerike</option>
+      </select>
+      <br /><br />
+      <article id="info-github"></article>
+    </section>
+    <section class="full-screen">
+      <h2><i>Pokemons</i></h2>
+      <nav class="links"></nav>
+      <article class="pokemons"></article>
+    </section>
+    <section class="full-screen">
+      <h2>Buscador de Shows de TV</h2>
+      <input type="search" id="search" placeholder="Buscar shows de TV..." />
+      <article class="shows"></article>
+    </section>
+    <section class="full-screen">
+      <h2><i>WordPress REST API</i></h2>
+      <p>
+        Introduce el dominio de un sitio hecho en <i>WordPress</i> para ver los
+        últimos artículos publicados.
+      </p>
+      <p>Al terminar de escribir presiona Enter.</p>
+      <input type="url" id="wp-site" placeholder="https://example.com" />
+      <article class="wp-posts"></article>
+    </section>
+    <script src="js/apis-practicas.js" type="module"></script>
+  </body>
+</html>
