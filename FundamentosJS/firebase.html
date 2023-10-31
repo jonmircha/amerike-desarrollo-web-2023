@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Firebase</title>
+  </head>
+  <body>
+    <h1>Firebase</h1>
+    <h2 id="mensaje"></h2>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-app.js";
+      import {
+        getDatabase,
+        ref,
+        onValue,
+        set,
+        push,
+      } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-database.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyAeV0pwCankmpggJwfswzt5kZC7sfDkd2Y",
+        authDomain: "dev5-desarrollo-web.firebaseapp.com",
+        projectId: "dev5-desarrollo-web",
+        storageBucket: "dev5-desarrollo-web.appspot.com",
+        messagingSenderId: "89836485212",
+        appId: "1:89836485212:web:714d27e8e641063ca8c499",
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      console.log(app);
+
+      const db = getDatabase(app);
+
+      let $mensaje = document.querySelector("#mensaje");
+      let refMensaje = ref(db, "mensaje");
+
+      console.log(db);
+      console.log(refMensaje);
+
+      onValue(refMensaje, (snapshot) => {
+        console.log(snapshot);
+        console.log(snapshot.key);
+        console.log(snapshot.val());
+        $mensaje.innerHTML = snapshot.val();
+      });
+
+      set(ref(db, "datosConSet"), {
+        name: "Jon",
+        age: 39,
+      });
+
+      push(ref(db, "datosConPush"), {
+        name: "Jon",
+        age: 39,
+      });
+    </script>
+  </body>
+</html>
